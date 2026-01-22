@@ -64,7 +64,7 @@ export function Header() {
               )}
             </button>
             {selectorOpen && (
-              <div className="absolute right-15 z-50 top-full w-48 rounded-md bg-white shadow-lg">
+              <div className="absolute right-80 z-50 top-full w-48 rounded-md bg-white shadow-lg">
                 <ul className="py-1">
                   <li>
                     <button className="block w-full px-4 py-2 text-left text-sm text-slate-500 hover:bg-slate-100">
@@ -83,7 +83,7 @@ export function Header() {
           <button className="cursor-pointer text-slate-500 hover:text-blue-600 font-semibold">
             Login
           </button>
-          <button className="cursor-pointer text-blue-600 font-semibold border border-blue-600 rounded-sm px-4 py-2">
+          <button className="cursor-pointer text-blue-600 font-semibold border border-blue-600 rounded-sm px-4 py-2 hover:border-2">
             Demonstração
           </button>
         </div>

@@ -1,3 +1,6 @@
 export default function LocaleHome() {
-  return null;
+  return (
+    <main>
+    </main>
+  )
 }

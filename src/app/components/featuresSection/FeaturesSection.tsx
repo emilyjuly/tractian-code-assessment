@@ -35,10 +35,10 @@ export function FeaturesSection() {
   const [activeIndex, setActiveIndex] = useState(0);
 
   return (
-    <section className="py-20">
-      <div className="flex justify-between">
+    <section className="py-12 lg:py-20">
+      <div className="flex flex-col lg:flex-row gap-5">
         <div className="flex flex-col">
-          <ul className="flex flex-col space-y-6 border-l border-slate-300 pl-6">
+          <ul className="flex flex-col space-y-6 border-l border-slate-300 lg:pl-3 pl-3">
             {features.map((feature, index) => {
               const isActive = index === activeIndex;
 
@@ -58,14 +58,14 @@ export function FeaturesSection() {
                         <CheckIcon className="h-4 w-4 text-white" />
                       </span>
                       <p
-                        className={`font-semibold text-[20px] ${
+                        className={`font-semibold lg:text-[20px] text-[16px] ${
                           isActive ? "text-slate-900" : "text-slate-400"
                         }`}
                       >
                         {feature.title}
                       </p>
                     </div>
-                    <div className="pr-30">
+                    <div className="lg:pr-30">
                       {isActive && feature.description && (
                         <p className="mt-2 text-[16px] font-medium text-slate-500">
                           {feature.description}

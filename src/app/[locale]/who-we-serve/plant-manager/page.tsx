@@ -4,7 +4,7 @@ import { TabsSection } from "@/app/components/tabsSection/TabsSection";
 
 export default function PlantManagerPage() {
   return (
-    <main>
+    <main className="flex flex-col">
       <Hero />
       <ReasonsForChoosingUs />
       <TabsSection />

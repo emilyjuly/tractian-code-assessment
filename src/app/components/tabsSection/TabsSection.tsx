@@ -30,14 +30,15 @@ export function TabsSection() {
         "Ações de segurança, validações e pendências visíveis em um só lugar",
         "Repetibilidade e responsabilização garantidas entre turnos e equipes",
         "Relatórios automáticos de quem fez o quê, quando e como",
-        "Exportação instantânea de apontamentos para revisões e inspeções"
+        "Exportação instantânea de apontamentos para revisões e inspeções",
       ],
       image: "supervisao-operacional.avif",
     },
     {
       id: "multi",
       label: "Visibilidade Multiplantas",
-      title: "Padronize a manutenção em todas as plantas, sem aumentar a complexidade.",
+      title:
+        "Padronize a manutenção em todas as plantas, sem aumentar a complexidade.",
       subtitle:
         "Gerencie e compare ativos e equipes em uma única plataforma, mantendo processos e KPIs consistentes de ponta a ponta.",
       optionsList: [
@@ -51,7 +52,8 @@ export function TabsSection() {
     {
       id: "zero",
       label: "Zero Gargalos de Mão de Obra",
-      title: "Equilibre cargas e maximize cada turno, garantindo que seu time foque no que mais importa.",
+      title:
+        "Equilibre cargas e maximize cada turno, garantindo que seu time foque no que mais importa.",
       subtitle:
         "Antecipe desequilíbrios de cargas de trabalho e mantenha o time focado nas prioridades que geram maior impacto.",
       optionsList: [
@@ -67,12 +69,35 @@ export function TabsSection() {
   const activeContent = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <div className="flex flex-col min-h-130 bg-white mx-auto items-center py-20 text-[32px]">
-      <h1 className="text-slate-900 font-extrabold">
+    <div className="flex flex-col w-full min-h-130 bg-white lg:mx-auto px-5 items-center lg:py-20 py-10">
+      <h1 className="text-slate-900 font-extrabold lg:text-[32px] text-[20px]">
         Projetada para supervisão inteligente e resultados concretos
       </h1>
-      <div className="border-b border-gray-200 my-10">
-        <div className="flex gap-30">
+      <div className="border-b border-gray-200 lg:w-[70%] w-full lg:my-10 mb-10">
+        <div className="flex flex-col w-full mt-8 lg:hidden bg-slate-50 rounded-md overflow-hidden">
+          {tabs.map((tab) => {
+            const isActive = activeTab === tab.id;
+
+            return (
+              <button
+                key={tab.id}
+                onClick={() => setActiveTab(tab.id)}
+                className={`
+          px-3 py-3 text-sm m-2 transition
+          ${
+            isActive
+              ? "bg-white text-slate-900 font-semibold shadow-sm"
+              : "text-slate-500"
+          }
+        `}
+              >
+                {tab.label}
+              </button>
+            );
+          })}
+        </div>
+
+        <div className="lg:flex gap-30 hidden">
           {tabs.map((tab) => {
             const isActive = activeTab === tab.id;
 

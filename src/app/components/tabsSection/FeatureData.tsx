@@ -14,8 +14,8 @@ export function FeatureData({
   image,
 }: FeatureDataProps) {
   return (
-    <div className="flex justify-between gap-10">
-      <div className="flex flex-col w-[35%]">
+    <div className="flex lg:flex-row flex-col justify-between gap-10 mx-5 lg:mx-0">
+      <div className="flex flex-col lg:w-[35%]">
         <p className="text-slate-800 text-[20px] font-extrabold">{title}</p>
         <p className="text-slate-500 text-[16px] my-5 font-medium">
           {subtitle}
@@ -26,7 +26,7 @@ export function FeatureData({
           })}
         </ul>
       </div>
-      <div className="relative h-105 w-[65%]">
+      <div className="relative h-105 lg:w-[65%]">
         <Image
           src={image}
           alt={image}

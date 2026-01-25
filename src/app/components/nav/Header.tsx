@@ -5,6 +5,7 @@ import { MegaMenu } from "./MegaMenu";
 import { ChevronUpIcon } from "@heroicons/react/16/solid";
 import { ChevronDownIcon } from "@heroicons/react/16/solid";
 import { GlobeAltIcon } from "@heroicons/react/24/outline";
+import { Bars3Icon } from "@heroicons/react/24/solid";
 
 export function Header() {
   const sections = ["Soluções", "Indústrias", "Recursos", "Sobre", "Planos"];
@@ -14,11 +15,11 @@ export function Header() {
   const [open, setOpen] = useState<string | null>(null);
 
   return (
-    <nav className="sticky top-0 z-40 flex w-full flex-col items-center justify-center transition-colors duration-default ease-in-out bg-slate-100 border-b border-slate-200 py-4">
-      <div className="flex w-full max-w-screen-2xl items-center justify-between px-4 py-2 lg:px-8 lg:py-0">
+    <nav className="sticky top-0 z-40 flex w-full flex-col items-center justify-center transition-colors duration-default ease-in-out bg-slate-100 border-b border-slate-200 lg:py-4 md:py-4 py-2">
+      <div className="flex w-full max-w-screen-2xl items-center justify-between px-4 py-2 lg:px-2 lg:py-0">
         <div className="flex items-center space-x-10">
           <Image src="/logo.png" alt="Logo" width={130} height={130} />
-          <ul className="flex items-center gap-6">
+          <ul className="hidden lg:flex items-center gap-6">
             {sections.map((section, index) => (
               <li
                 key={index}
@@ -44,7 +45,10 @@ export function Header() {
             ))}
           </ul>
         </div>
-        <div className="flex items-center space-x-10">
+        <button className="lg:hidden">
+          <Bars3Icon className="cursor-pointer text-blue-700 size-7" />
+        </button>
+        <div className="items-center space-x-10 hidden lg:flex">
           <div className="flex-col">
             <button
               className="flex cursor-pointer text-slate-500 hover:text-blue-600"

@@ -1,36 +1,82 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tractian – Frontend Technical Challenge
 
-## Getting Started
+This repository contains my implementation of the Tractian frontend technical challenge.
 
-First, run the development server:
+Due to time constraints related to my current full-time job, I focused on delivering a solid and well-structured foundation that reflects how I work on a daily basis, prioritizing code quality, organization, and responsiveness.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## ✅ What was implemented
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Header
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+3 main sections of the page
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+All implemented sections are fully responsive, following the provided reference page behavior and layout
 
-## Learn More
+Automatic redirect from / (home) to the original example path:
 
-To learn more about Next.js, take a look at the following resources:
+/[locale]/who-we-serve/plant-manager
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### 🛠️ Tech Stack
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Next.js (App Router)
 
-## Deploy on Vercel
+React
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+TypeScript
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Tailwind CSS for all styling
+
+Next/Image for image optimization
+
+Internationalized routing structure (i18n-ready)
+
+### 🌍 Routing & Structure
+
+The project uses a locale-based routing structure ([locale]) to support multiple languages.
+
+When accessing the root path (/), the user is automatically redirected to the example page path, matching the challenge requirements.
+
+### 🎨 Styling & Assets
+
+All styles were implemented using Tailwind CSS
+
+Images used in the project were sourced from Pexels, which provides royalty-free images for commercial use
+
+### ⚠️ Scope & Limitations
+
+Only part of the full page was implemented due to limited available time
+
+The focus was on:
+
+clean component structure
+
+responsiveness
+
+maintainability
+
+alignment with the provided design reference
+
+### 🚀 Next Steps (if more time were available)
+
+Complete the remaining page sections
+
+Finalize full i18n support for EN / PT / ES content
+
+Implement full form behavior and validations
+
+Refine animations, transitions, and micro-interactions
+
+Perform visual fine-tuning for pixel-perfect alignment
+
+Improve accessibility (ARIA attributes, keyboard navigation)
+
+### 🌐 Live Demo
+
+👉 Live URL: [(Vercel link here)](https://tractian-code-assessment.vercel.app/en/who-we-serve/plant-manager)
+👉 Repository: [(GitHub link)](https://github.com/emilyjuly/tractian-code-assessment)
+
+📝 Final Notes
+
+This implementation represents the level of structure, organization, and attention to detail I aim to deliver in real-world projects, even when working under time constraints.
+
+Thank you for the opportunity.

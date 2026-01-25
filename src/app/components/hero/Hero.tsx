@@ -25,7 +25,7 @@ export function Hero() {
           <p className="font-light text-white text-body-md lg:text-[16px] text-[14px]">
             OPERAÇÃO CONTÍNUA, ROI COMPROVADO
           </p>
-          <h1 className="text-center lg:font-bold font-extrabold text-white text-title-lg text-[25px] lg:text-[40px]/12">
+          <h1 className="text-center lg:text-left lg:font-bold font-extrabold text-white text-title-lg text-[25px] lg:text-[40px]/12">
             Para o Gerente Industrial que decide com dados, sem adivinhação
           </h1>
           <p className="font-light text-white lg:text-left text-center text-sm lg:text-[16px]">
